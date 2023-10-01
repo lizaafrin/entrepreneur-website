@@ -1,0 +1,26 @@
+.swiper-container {
+    width: 480px;
+    gap: 10px;
+  }
+  
+  @media screen and (min-width: 640px) {
+    .swiper-container {
+      width: 640px;
+      gap: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .swiper-container {
+      width: 768px;
+      gap: 10px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .swiper-container {
+      width: 1024px;
+      gap: 10px;
+      /* display: grid;
+      grid-column: 4; */
+    }
+  }
