@@ -1,13 +1,16 @@
 import React from 'react';
 import bannerImg from '../../assets/BannerSection/Rectangle 30.png'
 import './About_banner.css';
+import LazyLoad from 'react-lazy-load';
 
 const About_banner = () => {
     return (
         <div className='container'>
             <div className='flex flex-col md:flex-row gap-4 md:my-14  lg:my-20 lg:pb-20 '>
                 <div className='mt-14 md:mt-0 md:w-2/4 lg:w-1/2'>
-                    <img className='w-2/3 md:w-full lg:w-[484px] xl:w-[620px] mx-auto md:mx-0 md:z-10' src={bannerImg} alt="" />
+                    <LazyLoad>
+                        <img className='w-2/3 md:w-full lg:w-[484px] xl:w-[620px] mx-auto md:mx-0 md:z-10' src={bannerImg} alt="" />
+                    </LazyLoad>
                 </div>
                 <div className='mt-10 md:mt-0 w-full md:w-1/2'>
                     <h1 className='font-bold text-xl  md:text-2xl lg:text-3xl xl:text-4xl mb-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quo consequuntur eius rem mollitia et.</h1>

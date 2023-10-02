@@ -2,6 +2,7 @@ import React from 'react';
 import card1 from "../../assets/blog/Rectangle 33.png"
 import card2 from "../../assets/blog/Rectangle 34.png"
 import card3 from "../../assets/blog/Rectangle 37.png"
+import LazyLoad from 'react-lazy-load';
 
 
 const BlogCard = () => {
@@ -14,7 +15,9 @@ const BlogCard = () => {
             <div className='flex flex-col gap-10 my-10'>
                 <div className='flex flex-col md:flex-row gap-8'>
                     <div className='md:w-1/3'>
-                        <img className='' src={card1} alt="" />
+                        <LazyLoad>
+                            <img className='' src={card1} alt="" />
+                        </LazyLoad>
                     </div>
                     <div className='md:w-2/3'>
                         <h1 className='font-semibold text-lg '>
@@ -25,7 +28,9 @@ const BlogCard = () => {
                 </div>
                 <div className='flex flex-col md:flex-row  gap-8'>
                     <div className='md:w-1/3'>
-                        <img src={card2} alt="" />
+                        <LazyLoad>
+                            <img className='' src={card2} alt="" />
+                        </LazyLoad>
                     </div>
                     <div className='md:w-2/3'>
                         <h1 className='font-semibold text-lg'>
@@ -36,7 +41,9 @@ const BlogCard = () => {
                 </div>
                 <div className='flex flex-col md:flex-row  gap-8'>
                     <div className='md:w-1/3'>
-                        <img src={card3} alt="" />
+                        <LazyLoad>
+                            <img className='' src={card3} alt="" />
+                        </LazyLoad>
                     </div>
                     <div className='md:w-2/3'>
                         <h1 className='font-semibold text-lg'>

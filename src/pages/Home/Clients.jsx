@@ -5,6 +5,7 @@ import dribble from '../../assets/clients/dribbble.svg'
 import linkedIn from '../../assets/clients/linkedin.svg'
 import spotify from '../../assets/clients/spotify.svg'
 import medium from '../../assets/clients/medium.svg'
+import LazyLoad from 'react-lazy-load';
 
 const Clients = () => {
     return (
@@ -15,22 +16,32 @@ const Clients = () => {
             </div>
             <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 justify-items-center mt-10 sm:mt-16 md:mt-20 lg:mt-28 mb-20 sm:mb-32  md:mb-40 lg:mb-48 '>
                 <div className='w-fit h-24 flex items-start pt-2'>
-                    <img className='w-[110px] sm:w-[130px] md:w-[150px]' src={google} alt="" />
+                    <LazyLoad>
+                        <img className='w-[110px] sm:w-[130px] md:w-[150px]' src={google} alt="" />
+                    </LazyLoad>
                 </div>
                 <div className='w-fit h-24 flex items-start pt-2'>
-                    <img className='w-[110px] sm:w-[130px] md:w-[150px]' src={dribble} alt="" />
+                    <LazyLoad>
+                        <img className='w-[110px] sm:w-[130px] md:w-[150px]' src={dribble} alt="" />
+                    </LazyLoad>
                 </div>
                 <div className='w-fit h-24 flex items-start pt-2'>
-                    <img className='w-[110px] sm:w-[130px] md:w-[150px]' src={linkedIn} alt="w-[200px]" />
+                    <LazyLoad>
+                        <img className='w-[110px] sm:w-[130px] md:w-[150px]' src={linkedIn} alt="w-[200px]" />
+                    </LazyLoad>
                 </div>
                 <div className='w-fit h-24 flex items-start pt-2'>
                     <img className='w-[110px] sm:w-[130px] md:w-[150px]' src={amazon} alt="" />
                 </div>
                 <div className='w-fit h-24 flex items-start pt-2'>
-                    <img className='w-[110px] sm:w-[130px] md:w-[150px]' src={medium} alt="" />
+                    <LazyLoad>
+                        <img className='w-[110px] sm:w-[130px] md:w-[150px]' src={medium} alt="" />
+                    </LazyLoad>
                 </div>
                 <div className='w-fit h-28 flex items-start'>
-                    <img className='w-[110px] sm:w-[130px] md:w-[150px]' src={spotify} alt="" />
+                    <LazyLoad>
+                        <img className='w-[110px] sm:w-[130px] md:w-[150px]' src={spotify} alt="" />
+                    </LazyLoad>
                 </div>
             </div>
         </div>

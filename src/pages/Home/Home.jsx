@@ -11,28 +11,41 @@ import Clients from './Clients';
 import Testimonial from './Testimonial';
 import ProjectForm from './ProjectForm';
 import HomeBlog from './Home_Blog';
+import LazyLoad from 'react-lazy-load';
 
 const Home = () => {
     return (
         <>
             <div className='relative mt-5'>
-                <img className='absolute right-0' src={bannerBg3} alt="" />
-                <img className='absolute right-0' src={bannerBg4} alt="" />
-                <img className='absolute -bottom-32 left-0 hidden sm:block' src={bannerBg2} alt="" />
+                <LazyLoad>
+                    <img className='absolute right-0' src={bannerBg3} alt="" />
+                </LazyLoad>
+                <LazyLoad>
+                    <img className='absolute right-0' src={bannerBg4} alt="" />
+                </LazyLoad>
+                <LazyLoad>
+                    <img className='absolute -bottom-32 left-0 hidden sm:block' src={bannerBg2} alt="" />
+                </LazyLoad>
                 <Banner></Banner>
             </div>
             <div className='relative'>
-                <img className='absolute top-8 sm:top-4 md:-top-2 xl:-top-28 left-0 xl:left-[15%]' src={workBG} alt="" />
+                <LazyLoad>
+                    <img className='absolute top-8 sm:top-4 md:-top-2 xl:-top-28 left-0 xl:left-[15%]' src={workBG} alt="" />
+                </LazyLoad>
                 <WorkTogether></WorkTogether>
             </div>
             <WorkProcess></WorkProcess>
             <HomeBlog></HomeBlog>
             <div className='relative'>
-                <img className="hidden md:block md:absolute -top-3/4" src={bannerBg5} alt="" />
+                <LazyLoad>
+                    <img className="hidden md:block md:absolute -top-3/4" src={bannerBg5} alt="" />
+                </LazyLoad>
                 <Clients></Clients>
             </div>
-                <Testimonial></Testimonial>
+            <Testimonial></Testimonial>
+            <div className='container'>
                 <ProjectForm></ProjectForm>
+            </div>
         </>
     );
 };

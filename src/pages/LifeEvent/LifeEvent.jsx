@@ -1,6 +1,7 @@
 import React from 'react';
 import eventImg from '../../assets/blog/Tab-Image.png'
 import ProjectForm from '../Home/ProjectForm';
+import LazyLoad from 'react-lazy-load';
 
 
 const LifeEvent = () => {
@@ -40,6 +41,7 @@ const LifeEvent = () => {
             <div className='flex flex-col md:flex-row gap-8'>
                 <div className='md:w-1/2 flex justify-start'>
                     <img className='w-full lg:w-[90%] lg:h-[90%] object-cover' src={eventImg} alt="" />
+
                 </div>
                 <div className='md:w-1/2 flex flex-col '>
                     <div className='hover:border-l-8 hover:p-6 hover:card hover:shadow cursor-pointer border-l-orange-400'>

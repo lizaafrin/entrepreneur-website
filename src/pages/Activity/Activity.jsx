@@ -1,6 +1,7 @@
 import React from 'react';
 import activityImg from '../../assets/blog/Frame 285 1.png'
 import ProjectForm from '../Home/ProjectForm';
+import LazyLoad from 'react-lazy-load';
 
 const Activity = () => {
     return (
@@ -10,7 +11,9 @@ const Activity = () => {
                 <p className='text-gray-400 my-6'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
             <div>
-                <img src={activityImg} alt="" />
+                <LazyLoad>
+                    <img src={activityImg} alt="" />
+                </LazyLoad>
             </div>
             <ProjectForm></ProjectForm>
         </div>

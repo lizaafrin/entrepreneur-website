@@ -6,24 +6,22 @@ import ActiveLink from '../../hooks/ActiveLink/ActiveLink';
 const Header = () => {
     const navItems = <>
         <li>
-            <ActiveLink className="hover:bg-purple-700" to="/">
-                Home
-            </ActiveLink>
+            <ActiveLink to="/">Home</ActiveLink>
         </li>
         <li>
-            <ActiveLink className="hover:bg-purple-700" to='/about'>About</ActiveLink>
+            <ActiveLink to='/about'>About</ActiveLink>
         </li>
         <li>
-            <ActiveLink className="hover:bg-purple-700" to='/blog'>Blog</ActiveLink>
+            <ActiveLink to='/blog'>Blog</ActiveLink>
         </li>
         <li>
-            <ActiveLink className="hover:bg-purple-700" to='/portfolio'>Portfolio</ActiveLink>
+            <ActiveLink to='/portfolio'>Portfolio</ActiveLink>
         </li>
         <li>
-            <ActiveLink className="hover:bg-purple-700" to='/activity'>Activity</ActiveLink>
+            <ActiveLink to='/activity'>Activity</ActiveLink>
         </li>
         <li>
-            <ActiveLink className="hover:bg-purple-700" to='/event'>Life Event</ActiveLink>
+            <ActiveLink to='/event'>Life Event</ActiveLink>
         </li>
 
     </>

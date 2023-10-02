@@ -8,6 +8,9 @@
     padding: 0 10px;
 }
 
+.active-style{
+    @apply text-[#185ABC] font-bold
+}
 @media screen and (max-width: 1024px) {
     .container {
         padding: 0 20px;
